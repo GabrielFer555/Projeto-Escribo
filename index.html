@@ -42,11 +42,12 @@
             const result = await sumNumbers(number);
             resultField.value = result;
         })
-        clear.addEventListener('click',() =>{
-            values.value = '';
-            resultField.value = '';
-
-        } )
+        values.addEventListener('keydown', (event) =>{
+            let key = event.key;
+            if(key == '-'){
+                event.preventDefault();
+            }
+        })
 
         clear.addEventListener('click',() =>{
             values.value = '';
