@@ -11,4 +11,4 @@ const sumNumbers = (a) =>{
     return total;
 }
 
-modules.exports ={sumNumbers}
+module.exports ={sumNumbers}
