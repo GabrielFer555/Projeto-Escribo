@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Fernandes">
+    <meta name="description" content="Teste de calculo solicitado pela empresa Escribo">
+    <meta name="keywords" content="Matematica, JavaScript, HTML, CSS, Flutter">
+    <meta property="og:description" content="Site de calculo solicitado pela empresa Escribo feito com JavaScript, HTML e CSS puro">
+    <meta name="theme-color" content="#22a6b3"/>
+    <title>Calculo</title>
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3471/3471391.png" type="image/x-icon">
+</head>
+<body>
+    <main class="main-content">
+            <div id="inputResultBox">
+                <label for="inputResult">Resultado:</label>
+                <input type="text" id="inputResult" disabled>
+            </div>
+            <div class="input-box">
+                <div class="numberInsertedBox">
+                    <label for="numberInserted">Número:</label>
+                    <input type="number" name="NumeroInserido" id="numberInserted" placeholder="Insira um número" role="textbox" aria-label="Insira numero para calculo">
+                </div>
+                <div class="button-group">
+                    <button id="calcButton" class="btn">Calcular</button> <button id="resetButton" class="btn">Limpar</button>
+                </div>
+            </div>        
+    </main>
+    <footer> 
+       <span>Made by Gabriel Fernandes &#10004;</span> 
+    </footer>
+    <script defer src="./assets/js/script.min.js"></script>
+    <script>
+        const calculateButton = document.getElementById("calcButton");
+        const clear = document.getElementById("resetButton");
+        const values = document.getElementById("numberInserted");
+        const resultField = document.getElementById("inputResult");
+        calculateButton.addEventListener("click", async () =>{
+            let number = values.value;
+            const result = await sumNumbers(number);
+            resultField.value = result;
+        })
+
+        clear.addEventListener('click',() =>{
+            values.value = '';
+            resultField.value = '';
+
+        } )
+        
+    </script>
+</body>
+</html>

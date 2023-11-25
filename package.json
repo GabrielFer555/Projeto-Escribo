@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "name": "projeto-web",
+  "version": "1.0.0",
+  "description": "Projeto para empresa Escribo",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "test",
+    "math",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Gabriel Fernandes",
+  "license": "ISC"
+}
