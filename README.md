@@ -24,5 +24,5 @@ haverão dois botões "calcular" e "limpar" e um campo para você poder inserir 
 - Foi feito responsividade no CSS do projeto então o projeto se adapta ao tamanho da tela que você estiver visualizando.
 - Para quaisquer dúvidas estarei a disposição nos contatos presentes no meu perfil do GitHub
 
-Atenciosamente,
+Atenciosamente, <br>
 Gabriel Fernandes
